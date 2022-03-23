@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Website design</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!-- FONTAWESOME ICONS LINK-->
+    <script src="https://kit.fontawesome.com/b63f40c510.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="assets/Images/logo.png" class="logo">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" onclick="openPopup()">About Us</a></li>
+                <div class="popup" id="popup">
+                    <span class="user-icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <h2>About US</h2>
+                    <p>I'm a student, beginner in Web development and this is one of my web design.
+                        I actually have others works on my github account. Kindly have a look on them.
+                    </p>
+                    <a href="https://github.com/OWONO-ELOUNDOU/Web-development.git" target="BLANK">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <button type="button" onclick="closePopup()"><i class="fas fa-times"></i></button>
+                </div>
+                <li><a href="#" class="menu" id="menu" onclick="display()">Category</a></li>
+                <div class="sub-menu" id="submenu">
+                    <ul>
+                        <li>
+                            <a href="#">Animes Wallpapers</a>
+                        </li>
+                        <li>
+                            <a href="#">Brands and logos Wallpapers</a>
+                        </li>
+                        <li>
+                            <a href="#">Black Wallpapers</a>
+                        </li>
+                    </ul>
+                </div>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <a href="#"><button type="button">Register</button></a>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-col">
+                <h1>Find Amazing<br>Wallpapers Here</h1>
+                <p>Choose between many kind of wallpapers<br>to personalyse any of your devices.</p>
+                <a href="#" class="btn">Start Now</a>
+            </div>
+            <div class="right-col">
+                <img src="assets/Images/brand1.jpg" class="img1">
+                <img src="assets/Images/brand2.jpg" class="img2">
+                <img src="assets/Images/brand3.jpg" class="img3">
+                <img src="assets/Images/brand4.jpg" class="img4">
+                <img src="assets/Images/brand5.jpg" class="img5">
+            </div>
+        </div>
+
+        <div class="variety">
+            <h1>A large panel of<br>Anime Wallpapers</h1>
+            <p>Wallpapers here are design on many of the famous Animations out there</p>
+            <h3>Explore the Animation World</h3>
+
+            <div class="anime-wallpapers reveal-2">
+                <div class="img-first">
+                    <img src="assets/Images/anime1.jpg">
+                </div>
+                <div>
+                    <img src="assets/Images/anime2.jpeg">
+                </div>
+                <div>
+                    <img src="assets/Images/anime3.jpeg">
+                </div>
+                <div>
+                    <img src="assets/Images/anime4.png">
+                </div>
+                <div>
+                    <img src="assets/Images/anime5.png">
+                </div>
+            </div>
+
+            <div class="anime-wallpapers1  reveal-2">
+                <div class="img-first">
+                    <img src="assets/Images/anime6.png">
+                </div>
+                <div>
+                    <img src="assets/Images/anime7.jpeg">
+                </div>
+                <div>
+                    <img src="assets/Images/anime8.jpg">
+                </div>
+                <div>
+                    <img src="assets/Images/anime9.jpg">
+                </div>
+                <div>
+                    <img src="assets/Images/anime10.jpg">
+                </div>
+            </div>
+
+            <hr class="line">
+
+            <h1>A large collection of<br>Brand and logo Wallpapers</h1>
+            <p>Wallpapers here are design on many of the famous brands, logos, and team emblems out there</p>
+
+            <div class="brand-wallpapers  reveal-3">
+                <div>
+                    <img src="assets/brands/brand6.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand7.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand8.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand9.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand10.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand11.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand12.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand13.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand14.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand15.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand16.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand17.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand18.jpg">
+                </div>
+                <div>
+                    <img src="assets/brands/brand19.jpg">
+                </div>
+            </div>
+
+            <hr class="line">
+
+            <div class="cta reveal-2" id="categories">
+                <h1>Find what correspond to your desire</h1>
+                <button class="cta-btn" id="ctabtn" onclick="showTypes(), togglemenu()">View Type</button>
+            </div>
+
+            <div class="wallpaper-types" id="types">
+                <div class="type">
+                    <img src="assets/Images/anime11.jpg">
+                    <p>Anime Wallpaper</p>
+                    <a href="#" class="type-btn">Select</a>
+                </div>
+                <div class="type">
+                    <img src="assets/brands/brand14.jpg">
+                    <p>Brand/logo Wallpaper</p>
+                    <a href="#" class="type-btn">Select</a>
+                </div>
+                <div class="type">
+                    <img src="assets/Images/black.jpg" class="black">
+                    <p>black Wallpaper</p>
+                    <a href="#" class="type-btn">Select</a>
+                </div>
+            </div>
+
+            <div class="about-msg">
+                <h2>About WallpaperStore</h2>
+                <p>
+                    This is Website your you can find multiple Wallpapers of many kind from anime<br>
+                    to brand or logos. This site offers great high definition Wallpapers you can Download<br>
+                    find yourself here and enjoy our website.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://github.com/OWONO-ELOUNDOU/Web-development.git"><img src="assets/Images/github.svg" width="25px" height="25px"></a>
+            <a href="https://twitter.com"><img src="assets/Images/twitter.svg" width="25px" height="25px"></a>
+            <a href="https://instagram.com"><img src="assets/Images/instagram.svg" width="25px" height="25px"></a>
+            <hr>
+            <p>copyright &copy; easytech by OWONO ELOUNDOU Hermann Joseph 2022</p>
+        </div>
+    </div>
+
+    <script src="assets/JS/app.js"></script>
+    <!--<script src="assets/JS/show_type.js"></script>-->
+</body>
+</html>
