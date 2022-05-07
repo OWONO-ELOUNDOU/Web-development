@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(../Images/background.jpg);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;   
+    padding: 100px 0 70px;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 250px;
+    text-align: center;
+}
+.col-2 h1{
+    font-size: 70px;
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+.col-2 p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.col-2 a{
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #7c0fb2;
+    padding: 8px 30px;
+    background: #7c0fb2;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+}
+.col-2 a:hover{
+    background: #4c096e;
+}
+.col-2 img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ========== USER TYPE SELECTION SECTION ============ */
+.row.row-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    margin-left: 10px;
+}
+.row.row-2 .user-selection h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.row.row-2 .user-selection p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.lecturer-box{
+    margin-bottom: 20px;
+}
+.lecturer-box,
+.student-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.lecturer-box img,
+.student-box img {
+    width: 50px;
+}
+
+
+/* =========== FOOTER SECTION ============ */
+.footer{
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 100px;
+}
+
+.footer p{
+    color: #fff;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3{
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-1 img{
+    width: 70px;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 ul{
+    list-style: none;
+}
+.footer-col-2 ul li{
+    margin-bottom: 10px;
+}
+.footer-col-2 ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-col-3 input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px 60px;
+}
+.footer-col-3 input::placeholder{
+    text-align: left;
+}
+.footer-col-3 button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* ============ CONTACT PAGE ============= */
+.wrapper{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 30px;
+    border-radius: 5px;
+    position: relative;
+}
+form{
+    margin: 35px 30px;
+}
+form.disabled{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+form .dbl-field{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.dbl-field .field{
+    height: 50px;
+    display: flex;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+
+form i{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: #7c0fb2;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.field input::placeholder,
+.message textarea::placeholder{
+    color: #ccc;
+}
+.field input:focus,
+.message textarea:focus{
+    padding-left: 47px;
+    border: 2px solid #7c0fb2;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+    color: #7c0fb2;
+}
+
+form .message{
+    position: relative;
+}
+form .message i{
+    top: 30px;
+    font-size: 20px;
+}
+
+form .message textarea{
+    min-height: 130px;
+    max-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+    width: 0;
+}
+.message textarea:focus{
+    padding-top: 14px;
+}
+
+form .button-area{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+.button-area button{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #7c0fb2;
+    transition: background 0.3s ease;
+}
+.button-area button:hover{
+    background: #4c096e;
+}
+.button-area span{
+    font-size: 17px;
+    margin-left: 30px;
+    display: none;
+}
